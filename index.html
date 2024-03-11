@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/scripts.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,11 +72,124 @@
             <p>
                 Join now to start earning Rewards.
             </p>
-            <div>
+            <div class="join hero-button">
                 Join now
             </div>
             <div>
+                <p>
                 Or <a href="/">join in the app</a> for the best experience
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="getting-started">
+        <div class="started-text">
+            <h2>Getting started is easy</h2>
+            <p>Earn Stars and get rewarded in a few easy steps</p>
+        </div>
+        <div class="started-steps">
+            <div class="step">
+                <div class="logo">1</div>
+                <h3>Create an account</h3>
+                <p>To get started, <a href="/">join now</a>. You can also <a href="/">join in the app</a> to get access to the full range of Starbucks Rewards benefits.</p>
+            </div>
+            <div class="step">
+                <div class="logo">2</div>
+                <h3>Order and pay how you'd like</h3>
+                <p>Use cash, cred/debit card or save some time and pay right through the app. You'll collect Stars all ways. <a href="/">Learn how.</a></p>
+            </div>
+            <div class="step">
+                <div class="logo">3</div>
+                <h3>Earn Stars, get Rewards</h3>
+                <p>As you earn Stars, you can redeem them for Rewards - like free food, drinks, and more. Start redeeming with as little as 25 Stars!</p>
+            </div>
+        </div>
+    </div>
+    <div class="favorites">
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, '25')" id="defaultOpen">
+                25
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.516 14.323-1.49 6.452a.998.998 0 0 0 1.529 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822 0L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107zm2.853-4.326a.998.998 0 0 0 .832-.586L12 5.43l1.799 3.981a.998.998 0 0 0 .832.586l3.972.315-3.271 2.944c-.284.256-.397.65-.293 1.018l1.253 4.385-3.736-2.491a.995.995 0 0 0-1.109 0l-3.904 2.603 1.05-4.546a1 1 0 0 0-.276-.94l-3.038-2.962 4.09-.326z"></path></svg><span class="slider"></span>
+            </button>
+            <button class="tablinks" onclick="openTab(event, '100')">
+                100
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.516 14.323-1.49 6.452a.998.998 0 0 0 1.529 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822 0L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107zm2.853-4.326a.998.998 0 0 0 .832-.586L12 5.43l1.799 3.981a.998.998 0 0 0 .832.586l3.972.315-3.271 2.944c-.284.256-.397.65-.293 1.018l1.253 4.385-3.736-2.491a.995.995 0 0 0-1.109 0l-3.904 2.603 1.05-4.546a1 1 0 0 0-.276-.94l-3.038-2.962 4.09-.326z"></path></svg>
+                <span class="slider"></span>
+            </button>
+            <button class="tablinks" onclick="openTab(event, '200')">
+                200
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.516 14.323-1.49 6.452a.998.998 0 0 0 1.529 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822 0L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107zm2.853-4.326a.998.998 0 0 0 .832-.586L12 5.43l1.799 3.981a.998.998 0 0 0 .832.586l3.972.315-3.271 2.944c-.284.256-.397.65-.293 1.018l1.253 4.385-3.736-2.491a.995.995 0 0 0-1.109 0l-3.904 2.603 1.05-4.546a1 1 0 0 0-.276-.94l-3.038-2.962 4.09-.326z"></path></svg>
+                <span class="slider"></span>
+            </button>
+            <button class="tablinks" onclick="openTab(event, '300')">
+                300
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.516 14.323-1.49 6.452a.998.998 0 0 0 1.529 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822 0L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107zm2.853-4.326a.998.998 0 0 0 .832-.586L12 5.43l1.799 3.981a.998.998 0 0 0 .832.586l3.972.315-3.271 2.944c-.284.256-.397.65-.293 1.018l1.253 4.385-3.736-2.491a.995.995 0 0 0-1.109 0l-3.904 2.603 1.05-4.546a1 1 0 0 0-.276-.94l-3.038-2.962 4.09-.326z"></path></svg>
+                <span class="slider"></span>
+            </button>
+            <button class="tablinks" onclick="openTab(event, '400')">
+                400
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m6.516 14.323-1.49 6.452a.998.998 0 0 0 1.529 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822 0L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107zm2.853-4.326a.998.998 0 0 0 .832-.586L12 5.43l1.799 3.981a.998.998 0 0 0 .832.586l3.972.315-3.271 2.944c-.284.256-.397.65-.293 1.018l1.253 4.385-3.736-2.491a.995.995 0 0 0-1.109 0l-3.904 2.603 1.05-4.546a1 1 0 0 0-.276-.94l-3.038-2.962 4.09-.326z"></path></svg>
+                <span class="slider"></span>
+            </button>
+          </div>
+          <div id="25" class="tabcontent" >
+            <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/025.png" />
+            <div class="content-text">
+                <h3>Customize your drink</h3>
+                <p>Make your drink just right with an extra espresso shot, nondairy milk or a dash of your favorite syrup.</p>
+            </div>
+        </div>
+          
+          <div id="100" class="tabcontent">
+            <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/100.png" />
+            <div class="content-text">
+                <h3>Brewed hot or iced coffee or tea, bakery item, packaged snack and more</h3>
+                <p>Treat yourself to an iced coffee, buttery croissant, bag of chips and more.</p>
+            </div>
+          </div> 
+          
+          <div id="200" class="tabcontent">
+            <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/200.png" />
+            <div class="content-text">
+                <h3>Handcrafted drink (Cold Brew, lattes and more) or hot breakfast</h3>
+                <p>Turn good mornings great with a delicious handcrafted drink of your choice, breakfast sandwich or oatmeal on us.</p>
+            </div>
+          </div>
+          <div id="300" class="tabcontent">
+            <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/300.png" />
+            <div class="content-text">
+                <h3>Sandwich, protein box or at-home coffee</h3>
+                <p>Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including Starbucks VIA Instant®.</p>
+            </div>
+        </div>
+          <div id="400" class="tabcontent">
+            <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/400.png" />
+            <div class="content-text">
+                <h3>Select Starbucks® merchandise</h3>
+                <p>Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.</p>
+          </div>
+        </div>
+    </div>
+    <div class="endless-extras">
+        <div class="endless-text">
+            <h2>Getting started is easy</h2>
+            <p>Earn Stars and get rewarded in a few easy steps</p>
+        </div>
+        <div class="extra-container">
+            <div class="extra">
+                <div class="logo"><img src="https://www.starbucks.com/weblx/images/rewards/benefits/1-fun-freebies.jpg"/></div>
+                <h3>Create an account</h3>
+                <p>To get started, <a href="/">join now</a>. You can also <a href="/">join in the app</a> to get access to the full range of Starbucks Rewards benefits.</p>
+            </div>
+            <div class="extra">
+                <div class="logo"><img src="https://www.starbucks.com/weblx/images/rewards/benefits/2-order-and-pay-ahead.jpg"/></div>
+                <h3>Order and pay how you'd like</h3>
+                <p>Use cash, cred/debit card or save some time and pay right through the app. You'll collect Stars all ways. <a href="/">Learn how.</a></p>
+            </div>
+            <div class="extra">
+                <div class="logo"><img src="https://www.starbucks.com/weblx/images/rewards/benefits/3-get-to-free-faster.jpg"/></div>
+                <h3>Earn Stars, get Rewards</h3>
+                <p>As you earn Stars, you can redeem them for Rewards - like free food, drinks, and more. Start redeeming with as little as 25 Stars!</p>
             </div>
         </div>
     </div>

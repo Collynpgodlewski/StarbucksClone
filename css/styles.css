@@ -99,10 +99,20 @@ body, html{
 }
 
 .activeTab{
+    
     background-color:  #1e3932;
     color: white;
     padding: 1rem;
     text-transform: uppercase;
+
+}
+
+.sticky{
+    margin-top: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .activeTab p{
@@ -123,8 +133,8 @@ body, html{
 .hero-text{
     color: white;
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top: 35%;
+    left: 7%;
     /* transform: translate(-50%, -50%); */
 }
 
@@ -134,10 +144,173 @@ body, html{
 }
 
 .hero-text p{
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+    font-size: 18px;
 }
 
 .hero-text a{
     color: white;
     text-decoration: underline;
 }
+
+.hero-text a:hover{
+    text-decoration: none;
+}
+
+.hero-button{
+    background-color: #008248;
+    border: 1px solid #008248;
+    width: fit-content;
+}
+
+.getting-started, .endless-extras{
+    padding: 128px 0;
+    /* border: 1px solid blue; */
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: rgba(0, 0, 0, 0.87);
+}
+
+.started-text h2, .endless-text h2{
+    font-size: 28px;
+}
+
+.started-text p, .endless-text p{
+    padding-top: 16px;
+    font-weight: 400;
+}
+
+.getting-started .logo{
+    font-size: 20px;
+    width: fit-content;
+    border: 1px solid #008248;
+    color: #008248;
+    padding: 14px 23px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.started-steps, .extra-container{
+    padding-top: 48px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.step h3, .extra h3{
+    padding-top: 24px;
+    padding-bottom: 16px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.step p, .extra p{
+    font-weight: 500;
+}
+
+.step{
+    width: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step a{
+    color: #008248;
+    text-decoration: underline;
+}
+
+.favorites{
+    padding: 64px 0;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #f1f8f6;
+    padding-bottom:2px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 21px;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Change background color of buttons on hover */
+  /* .tab button:hover {
+    background-color: #ddd;
+  } */
+  
+  /* Create an active/current tablink class */
+  .tab button.active{
+    border-bottom: 5px solid #1e3932;
+  }
+
+ 
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    /* height: 500px; */
+    padding: 32px 0;
+    justify-content: center;
+    background-color:#d4e9e2;
+  }
+
+  .tabcontent .content-text{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: center;
+  }
+
+  .tabcontent .content-text h3{
+    font-size: 24px;
+    padding-bottom: 16px;
+  }
+
+  .tabcontent img{
+    width: 25%;
+  }
+
+  .tabcontent .content-text, .tabcontent img{
+    animation: fadeEffect 1s; 
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .endless-extras{
+    padding: 64px 0;
+    height: 470px;
+  }
+
+  .endless-extras img{
+    width: 25%;
+  }
+
+  .extra-container .extra{
+    width: 25%;
+  }
