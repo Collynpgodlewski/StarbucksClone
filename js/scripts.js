@@ -1,8 +1,26 @@
 $(document).ready(function(){
-
-   
-    // Get the element with id="defaultOpen" and click on it
+    // alert("Disclaimer: This is a clone. I do not own the rights to any of these assets. This is a ")
     document.getElementById("defaultOpen").click();
+
+    
+    window.onscroll = function() {stickyHeader()};
+
+    var header = document.getElementById("rewards");
+
+    var sticky = header.offsetTop;
+
+    function stickyHeader() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+    
+    $('.accordions li .title').click(function(){
+        $(this).toggleClass("opened");
+        $(this).next(".accord-content").slideToggle();
+      });
 })
 
  function openTab(evt, cityName) {
